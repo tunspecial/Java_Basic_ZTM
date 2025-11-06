@@ -3,7 +3,7 @@ package functionalprogramming;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
+// import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamTerminal {
@@ -35,9 +35,9 @@ public class StreamTerminal {
         System.out.println("None Bigger Than 5 : " + noneBiggerThan5);
 
         // collect : transform a stream into a different data structure , such as List , Set , Map
-        List<String> nameList = names.stream().collect(Collectors.toList());
+        // List<String> nameList = names.stream().collect(Collectors.toList());
         // Java 16 ++
-        List<String> nameList2 = names.stream().toList();
+        // List<String> nameList2 = names.stream().toList();
 
         //reduce : applies a binary element to the element in the stream , reducing them to a single value.
         Optional<String> totalString = names.stream().reduce(String:: concat);
